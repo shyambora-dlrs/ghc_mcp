@@ -1,0 +1,33 @@
+{
+  "name": "@ghc/mcp-worker",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev --local --persist-to .wrangler/state",
+    "deploy": "wrangler deploy",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint src test",
+    "test": "vitest run",
+    "test:integration": "vitest run test/integration",
+    "db:migrate:local": "wrangler d1 migrations apply ghc-cause-list-db --local --persist-to .wrangler/state",
+    "db:migrate:remote": "wrangler d1 migrations apply ghc-cause-list-db --remote",
+    "db:seed:test": "wrangler d1 execute ghc-cause-list-db --local --persist-to .wrangler/state --file ../../database/seed/test-seed.sql"
+  },
+  "dependencies": {
+    "@ghc/shared-types": "*",
+    "@modelcontextprotocol/sdk": "1.32.2",
+    "node-html-parser": "9.0.6",
+    "zod": "4.6.7"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "5.20261102.1",
+    "@eslint/js": "10.0.1",
+    "@types/node": "22.19.1",
+    "eslint": "10.14.0",
+    "typescript": "5.9.3",
+    "typescript-eslint": "8.72.1",
+    "vitest": "5.0.5",
+    "wrangler": "4.156.1"
+  }
+}

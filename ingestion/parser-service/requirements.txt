@@ -1,0 +1,8 @@
+# Direct dependencies, pinned to the versions the test-suite was run against (2026-11-02).
+pymupdf==2.0
+pydantic==2.14.2
+fastapi==0.162.0
+uvicorn==0.54.0
+httpx==0.28.1
+pytesseract==0.3.13
+pillow==13.0.0

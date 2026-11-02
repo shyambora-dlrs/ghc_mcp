@@ -1,0 +1,636 @@
+{
+ "layout_a": {
+  "payloads": [
+   {
+    "phase": "begin",
+    "parser_version": "ghc-layout-1.0",
+    "page_count": 2
+   },
+   {
+    "phase": "chunk",
+    "parser_version": "ghc-layout-1.0",
+    "pages": [
+     {
+      "page_number": 1,
+      "text_content": "THE GAUHATI HIGH COURT AT GUWAHATI\n(The High Court of Assam, Nagaland, Mizoram and Arunachal Pradesh)\nDAILY CAUSELIST\n[ For Monday,2nd November 2026]\n[AT 10:30 AM]\nBEFORE:\nHONOURABLE THE CHIEF JUSTICE\nHONOURABLE MR. JUSTICE ALPHA BETA\nCOURT NO: 1\n[DIVISION BENCH-I]\n------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------\nSr.No. Case Number\nMain Parties\nPetitioner Advocate\nRespondent Advocate\n------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------\n- FOR ORDERS -\n1\nWP(C)/101/2026\nFIXED\nALPHA TRADERS\n            Versus\nTHE STATE OF ASSAM AND 2 ORS.\nMR A ONE\nMR B TWO\nGA, ASSAM\n2\nCrl.A./55/2025\nBETA INDUSTRIES LIMITED\n            Versus\nGAMMA CORPORATION OF\nINDIA LTD\nMR VERY LONG ADVOCATE NAME KUMAR\nSARMA\nMR C THREE\nSC, CGC\nDY.S.G.I.\n3\nI.A.(Civil)/9/2026\nDELTA ENTERPRISES\nMR D FOUR\nin WA/77/2024\n            Versus\nSC, BTC\nEPSILON DEPT\nWITH\nWA/77/2024\nDELTA ENTERPRISES AND ORS\nMR E FIVE\n            Versus\nEPSILON DEPT\nMATTERS RELATING TO TEST HEADING\n4\nWITH\nWP(C)/102/2026\nZETA TRUST\n            Versus\nTHE UNION OF INDIA\nMR F SIX\nSC, CGC\n 1/2 \n",
+      "extraction_method": "TEXT",
+      "ocr_confidence": null,
+      "page_status": "OK"
+     }
+    ],
+    "entries": []
+   },
+   {
+    "phase": "chunk",
+    "parser_version": "ghc-layout-1.0",
+    "pages": [
+     {
+      "page_number": 2,
+      "text_content": "5\nWP(C)/103/2026\nFIXED\nETA PARTNERS\n            Versus\nTHE STATE OF ASSAM\nMR G SEVEN\nGA, ASSAM\n[AT 10:30 AM]\nBEFORE:\nHONOURABLE MR. JUSTICE GAMMA DELTA\nCOURT NO: 2\n[CIVIL BENCH-I\nTHIS BENCH WILL TAKE UP MOTION MATTERS FIRST]\n------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------\nSr.No. Case Number\nMain Parties\nPetitioner Advocate\nRespondent Advocate\n------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------\n1\nMACApp./7/2026\nTHETA INSURANCE CO LTD\n            Versus\nIOTA PERSON\nMR H EIGHT\nMR I NINE\n==========================================================================================\nLEAVE NOTE OF ADVOCATES FOR 02/11/2026\n1)\nMS LEAVE PERSON\n08-09-2026\nTo\n23-12-2026\n 2/2 \n",
+      "extraction_method": "TEXT",
+      "ocr_confidence": null,
+      "page_status": "OK"
+     }
+    ],
+    "entries": []
+   },
+   {
+    "phase": "chunk",
+    "parser_version": "ghc-layout-1.0",
+    "pages": [],
+    "entries": [
+     {
+      "entry_index": 0,
+      "bench": {
+       "court_label_raw": "COURT NO: 1",
+       "bench_label_raw": "DIVISION BENCH-I",
+       "judges": [
+        "HONOURABLE THE CHIEF JUSTICE",
+        "HONOURABLE MR. JUSTICE ALPHA BETA"
+       ],
+       "notes": [],
+       "sitting_time_raw": "AT 10:30 AM"
+      },
+      "serial_number": "1",
+      "item_number": null,
+      "case_number_raw": "WP(C)/101/2026",
+      "listing_note_raw": "FIXED",
+      "section_heading_raw": "- FOR ORDERS -",
+      "connected_cases": [],
+      "page_start": 1,
+      "page_end": 1,
+      "raw_text": "1 | WP(C)/101/2026 | ALPHA TRADERS | MR A ONE | GA, ASSAM\nFIXED | Versus | MR B TWO\nTHE STATE OF ASSAM AND 2 ORS.",
+      "extraction_method": "TEXT",
+      "extraction_confidence": 1.0,
+      "validation_status": "VALIDATED",
+      "validation_flags": [],
+      "parties": [
+       {
+        "name_raw": "ALPHA TRADERS",
+        "side": "PETITIONER",
+        "sequence": 0
+       },
+       {
+        "name_raw": "THE STATE OF ASSAM AND 2 ORS.",
+        "side": "RESPONDENT",
+        "sequence": 1
+       }
+      ],
+      "advocates": [
+       {
+        "name_raw": "MR A ONE",
+        "side": "PETITIONER",
+        "sequence": 0
+       },
+       {
+        "name_raw": "MR B TWO",
+        "side": "PETITIONER",
+        "sequence": 1
+       },
+       {
+        "name_raw": "GA, ASSAM",
+        "side": "RESPONDENT",
+        "sequence": 0
+       }
+      ]
+     },
+     {
+      "entry_index": 1,
+      "bench": {
+       "court_label_raw": "COURT NO: 1",
+       "bench_label_raw": "DIVISION BENCH-I",
+       "judges": [
+        "HONOURABLE THE CHIEF JUSTICE",
+        "HONOURABLE MR. JUSTICE ALPHA BETA"
+       ],
+       "notes": [],
+       "sitting_time_raw": "AT 10:30 AM"
+      },
+      "serial_number": "2",
+      "item_number": null,
+      "case_number_raw": "Crl.A./55/2025",
+      "listing_note_raw": null,
+      "section_heading_raw": "- FOR ORDERS -",
+      "connected_cases": [],
+      "page_start": 1,
+      "page_end": 1,
+      "raw_text": "2 | Crl.A./55/2025 | BETA INDUSTRIES LIMITED | MR VERY LONG ADVOCATE NAME KUMAR | SC, CGC\nVersus | SARMA | DY.S.G.I.\nGAMMA CORPORATION OF | MR C THREE\nINDIA LTD",
+      "extraction_method": "TEXT",
+      "extraction_confidence": 0.97,
+      "validation_status": "VALIDATED",
+      "validation_flags": [
+       "ADVOCATE_WRAP_HEURISTIC"
+      ],
+      "parties": [
+       {
+        "name_raw": "BETA INDUSTRIES LIMITED",
+        "side": "PETITIONER",
+        "sequence": 0
+       },
+       {
+        "name_raw": "GAMMA CORPORATION OF INDIA LTD",
+        "side": "RESPONDENT",
+        "sequence": 1
+       }
+      ],
+      "advocates": [
+       {
+        "name_raw": "MR VERY LONG ADVOCATE NAME KUMAR SARMA",
+        "side": "PETITIONER",
+        "sequence": 0
+       },
+       {
+        "name_raw": "MR C THREE",
+        "side": "PETITIONER",
+        "sequence": 1
+       },
+       {
+        "name_raw": "SC, CGC",
+        "side": "RESPONDENT",
+        "sequence": 0
+       },
+       {
+        "name_raw": "DY.S.G.I.",
+        "side": "RESPONDENT",
+        "sequence": 1
+       }
+      ]
+     },
+     {
+      "entry_index": 2,
+      "bench": {
+       "court_label_raw": "COURT NO: 1",
+       "bench_label_raw": "DIVISION BENCH-I",
+       "judges": [
+        "HONOURABLE THE CHIEF JUSTICE",
+        "HONOURABLE MR. JUSTICE ALPHA BETA"
+       ],
+       "notes": [],
+       "sitting_time_raw": "AT 10:30 AM"
+      },
+      "serial_number": "3",
+      "item_number": null,
+      "case_number_raw": "I.A.(Civil)/9/2026",
+      "listing_note_raw": "in WA/77/2024",
+      "section_heading_raw": "- FOR ORDERS -",
+      "connected_cases": [
+       "WA/77/2024"
+      ],
+      "page_start": 1,
+      "page_end": 1,
+      "raw_text": "3 | I.A.(Civil)/9/2026 | DELTA ENTERPRISES | MR D FOUR\nin WA/77/2024 | Versus | SC, BTC\nEPSILON DEPT",
+      "extraction_method": "TEXT",
+      "extraction_confidence": 1.0,
+      "validation_status": "VALIDATED",
+      "validation_flags": [],
+      "parties": [
+       {
+        "name_raw": "DELTA ENTERPRISES",
+        "side": "PETITIONER",
+        "sequence": 0
+       },
+       {
+        "name_raw": "EPSILON DEPT",
+        "side": "RESPONDENT",
+        "sequence": 1
+       }
+      ],
+      "advocates": [
+       {
+        "name_raw": "MR D FOUR",
+        "side": "PETITIONER",
+        "sequence": 0
+       },
+       {
+        "name_raw": "SC, BTC",
+        "side": "RESPONDENT",
+        "sequence": 0
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "phase": "chunk",
+    "parser_version": "ghc-layout-1.0",
+    "pages": [],
+    "entries": [
+     {
+      "entry_index": 3,
+      "bench": {
+       "court_label_raw": "COURT NO: 1",
+       "bench_label_raw": "DIVISION BENCH-I",
+       "judges": [
+        "HONOURABLE THE CHIEF JUSTICE",
+        "HONOURABLE MR. JUSTICE ALPHA BETA"
+       ],
+       "notes": [],
+       "sitting_time_raw": "AT 10:30 AM"
+      },
+      "serial_number": "3",
+      "item_number": null,
+      "case_number_raw": "WA/77/2024",
+      "listing_note_raw": "WITH",
+      "section_heading_raw": "- FOR ORDERS -",
+      "connected_cases": [
+       "I.A.(CIVIL)/9/2026",
+       "WP(C)/102/2026"
+      ],
+      "page_start": 1,
+      "page_end": 1,
+      "raw_text": "WITH\nWA/77/2024 | DELTA ENTERPRISES AND ORS | MR E FIVE\nVersus\nEPSILON DEPT",
+      "extraction_method": "TEXT",
+      "extraction_confidence": 1.0,
+      "validation_status": "VALIDATED",
+      "validation_flags": [],
+      "parties": [
+       {
+        "name_raw": "DELTA ENTERPRISES AND ORS",
+        "side": "PETITIONER",
+        "sequence": 0
+       },
+       {
+        "name_raw": "EPSILON DEPT",
+        "side": "RESPONDENT",
+        "sequence": 1
+       }
+      ],
+      "advocates": [
+       {
+        "name_raw": "MR E FIVE",
+        "side": "PETITIONER",
+        "sequence": 0
+       }
+      ]
+     },
+     {
+      "entry_index": 4,
+      "bench": {
+       "court_label_raw": "COURT NO: 1",
+       "bench_label_raw": "DIVISION BENCH-I",
+       "judges": [
+        "HONOURABLE THE CHIEF JUSTICE",
+        "HONOURABLE MR. JUSTICE ALPHA BETA"
+       ],
+       "notes": [],
+       "sitting_time_raw": "AT 10:30 AM"
+      },
+      "serial_number": "4",
+      "item_number": null,
+      "case_number_raw": "WP(C)/102/2026",
+      "listing_note_raw": "WITH",
+      "section_heading_raw": "MATTERS RELATING TO TEST HEADING",
+      "connected_cases": [
+       "WA/77/2024"
+      ],
+      "page_start": 1,
+      "page_end": 1,
+      "raw_text": "4 | WITH\nWP(C)/102/2026 | ZETA TRUST | MR F SIX | SC, CGC\nVersus\nTHE UNION OF INDIA",
+      "extraction_method": "TEXT",
+      "extraction_confidence": 1.0,
+      "validation_status": "VALIDATED",
+      "validation_flags": [],
+      "parties": [
+       {
+        "name_raw": "ZETA TRUST",
+        "side": "PETITIONER",
+        "sequence": 0
+       },
+       {
+        "name_raw": "THE UNION OF INDIA",
+        "side": "RESPONDENT",
+        "sequence": 1
+       }
+      ],
+      "advocates": [
+       {
+        "name_raw": "MR F SIX",
+        "side": "PETITIONER",
+        "sequence": 0
+       },
+       {
+        "name_raw": "SC, CGC",
+        "side": "RESPONDENT",
+        "sequence": 0
+       }
+      ]
+     },
+     {
+      "entry_index": 5,
+      "bench": {
+       "court_label_raw": "COURT NO: 1",
+       "bench_label_raw": "DIVISION BENCH-I",
+       "judges": [
+        "HONOURABLE THE CHIEF JUSTICE",
+        "HONOURABLE MR. JUSTICE ALPHA BETA"
+       ],
+       "notes": [],
+       "sitting_time_raw": "AT 10:30 AM"
+      },
+      "serial_number": "5",
+      "item_number": null,
+      "case_number_raw": "WP(C)/103/2026",
+      "listing_note_raw": "FIXED",
+      "section_heading_raw": "MATTERS RELATING TO TEST HEADING",
+      "connected_cases": [],
+      "page_start": 2,
+      "page_end": 2,
+      "raw_text": "5 | WP(C)/103/2026 | ETA PARTNERS | MR G SEVEN | GA, ASSAM\nFIXED | Versus\nTHE STATE OF ASSAM",
+      "extraction_method": "TEXT",
+      "extraction_confidence": 1.0,
+      "validation_status": "VALIDATED",
+      "validation_flags": [],
+      "parties": [
+       {
+        "name_raw": "ETA PARTNERS",
+        "side": "PETITIONER",
+        "sequence": 0
+       },
+       {
+        "name_raw": "THE STATE OF ASSAM",
+        "side": "RESPONDENT",
+        "sequence": 1
+       }
+      ],
+      "advocates": [
+       {
+        "name_raw": "MR G SEVEN",
+        "side": "PETITIONER",
+        "sequence": 0
+       },
+       {
+        "name_raw": "GA, ASSAM",
+        "side": "RESPONDENT",
+        "sequence": 0
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "phase": "chunk",
+    "parser_version": "ghc-layout-1.0",
+    "pages": [],
+    "entries": [
+     {
+      "entry_index": 6,
+      "bench": {
+       "court_label_raw": "COURT NO: 2",
+       "bench_label_raw": "CIVIL BENCH-I",
+       "judges": [
+        "HONOURABLE MR. JUSTICE GAMMA DELTA"
+       ],
+       "notes": [
+        "THIS BENCH WILL TAKE UP MOTION MATTERS FIRST"
+       ],
+       "sitting_time_raw": "AT 10:30 AM"
+      },
+      "serial_number": "1",
+      "item_number": null,
+      "case_number_raw": "MACApp./7/2026",
+      "listing_note_raw": null,
+      "section_heading_raw": null,
+      "connected_cases": [],
+      "page_start": 2,
+      "page_end": 2,
+      "raw_text": "1 | MACApp./7/2026 | THETA INSURANCE CO LTD | MR H EIGHT | MR I NINE\nVersus\nIOTA PERSON",
+      "extraction_method": "TEXT",
+      "extraction_confidence": 1.0,
+      "validation_status": "VALIDATED",
+      "validation_flags": [],
+      "parties": [
+       {
+        "name_raw": "THETA INSURANCE CO LTD",
+        "side": "PETITIONER",
+        "sequence": 0
+       },
+       {
+        "name_raw": "IOTA PERSON",
+        "side": "RESPONDENT",
+        "sequence": 1
+       }
+      ],
+      "advocates": [
+       {
+        "name_raw": "MR H EIGHT",
+        "side": "PETITIONER",
+        "sequence": 0
+       },
+       {
+        "name_raw": "MR I NINE",
+        "side": "RESPONDENT",
+        "sequence": 0
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "phase": "complete",
+    "parser_version": "ghc-layout-1.0",
+    "extraction_status": "EXTRACTED",
+    "metadata": {
+     "parser_version": "ghc-layout-1.0",
+     "page_status_counts": {
+      "OK": 2
+     },
+     "ocr_pages": [],
+     "entries": 7,
+     "entries_needing_review": 0,
+     "ocr_available": true,
+     "benches": 2,
+     "column_sources": {
+      "header": 2
+     },
+     "pdf_date_text": "2026-11-02",
+     "serial_stats": {
+      "sections": 2,
+      "distinct_serials": 6,
+      "missing": 0,
+      "backwards": 0
+     }
+    }
+   }
+  ],
+  "expected_cases": [
+   "WP(C)/101/2026",
+   "Crl.A./55/2025",
+   "I.A.(Civil)/9/2026",
+   "WA/77/2024",
+   "WP(C)/102/2026",
+   "WP(C)/103/2026",
+   "MACApp./7/2026"
+  ]
+ },
+ "layout_b": {
+  "payloads": [
+   {
+    "phase": "begin",
+    "parser_version": "ghc-layout-1.0",
+    "page_count": 1
+   },
+   {
+    "phase": "chunk",
+    "parser_version": "ghc-layout-1.0",
+    "pages": [
+     {
+      "page_number": 1,
+      "text_content": "The Gauhati High Court, At Guwahati\n[ SUPPLEMENTARY CAUSELIST-I ]\n [ FOR MONDAY, THE 2ND   DAY OF NOVEMBER, 2026 ]\n[AT 2:00 PM]\nBEFORE\nHONOURABLE MR. JUSTICE OMEGA PSI\n[ COURT NO: 9 ]\n[ COURT PROCEEDING OF THE FOLLOWING CASES\n  PERTAINING TO A SYNTHETIC BENCH WILL BE\n  CONDUCTED THROUGH REMOTE VIDEO CONFERENCING ]\nJUDGEMENT\n1.\nWP(C)/501/2024\nSHRI SYNTHETIC ONE\n VERSUS \nTHE STATE OF TESTLAND AND 3\nORS\nMR P ONE\nMR Q TWO\nGOVT ADV TL\nWITH\n2.\nWP(C)/502/2024\nSHRI SYNTHETIC TWO\n VERSUS \nSTATE OF TESTLAND\nMR R THREE\nGOVT ADV TL\n 1/1 \n",
+      "extraction_method": "TEXT",
+      "ocr_confidence": null,
+      "page_status": "OK"
+     }
+    ],
+    "entries": []
+   },
+   {
+    "phase": "chunk",
+    "parser_version": "ghc-layout-1.0",
+    "pages": [],
+    "entries": [
+     {
+      "entry_index": 0,
+      "bench": {
+       "court_label_raw": "COURT NO: 9",
+       "bench_label_raw": null,
+       "judges": [
+        "HONOURABLE MR. JUSTICE OMEGA PSI"
+       ],
+       "notes": [
+        "COURT PROCEEDING OF THE FOLLOWING CASES PERTAINING TO A SYNTHETIC BENCH WILL BE CONDUCTED THROUGH REMOTE VIDEO CONFERENCING"
+       ],
+       "sitting_time_raw": "AT 2:00 PM"
+      },
+      "serial_number": "1",
+      "item_number": null,
+      "case_number_raw": "WP(C)/501/2024",
+      "listing_note_raw": null,
+      "section_heading_raw": "JUDGEMENT",
+      "connected_cases": [
+       "WP(C)/502/2024"
+      ],
+      "page_start": 1,
+      "page_end": 1,
+      "raw_text": "1. | WP(C)/501/2024 | SHRI SYNTHETIC ONE | MR P ONE | GOVT ADV TL\nVERSUS | MR Q TWO\nTHE STATE OF TESTLAND AND 3\nORS",
+      "extraction_method": "TEXT",
+      "extraction_confidence": 1.0,
+      "validation_status": "VALIDATED",
+      "validation_flags": [],
+      "parties": [
+       {
+        "name_raw": "SHRI SYNTHETIC ONE",
+        "side": "PETITIONER",
+        "sequence": 0
+       },
+       {
+        "name_raw": "THE STATE OF TESTLAND AND 3 ORS",
+        "side": "RESPONDENT",
+        "sequence": 1
+       }
+      ],
+      "advocates": [
+       {
+        "name_raw": "MR P ONE",
+        "side": "PETITIONER",
+        "sequence": 0
+       },
+       {
+        "name_raw": "MR Q TWO",
+        "side": "PETITIONER",
+        "sequence": 1
+       },
+       {
+        "name_raw": "GOVT ADV TL",
+        "side": "RESPONDENT",
+        "sequence": 0
+       }
+      ]
+     },
+     {
+      "entry_index": 1,
+      "bench": {
+       "court_label_raw": "COURT NO: 9",
+       "bench_label_raw": null,
+       "judges": [
+        "HONOURABLE MR. JUSTICE OMEGA PSI"
+       ],
+       "notes": [
+        "COURT PROCEEDING OF THE FOLLOWING CASES PERTAINING TO A SYNTHETIC BENCH WILL BE CONDUCTED THROUGH REMOTE VIDEO CONFERENCING"
+       ],
+       "sitting_time_raw": "AT 2:00 PM"
+      },
+      "serial_number": "2",
+      "item_number": null,
+      "case_number_raw": "WP(C)/502/2024",
+      "listing_note_raw": "WITH",
+      "section_heading_raw": "JUDGEMENT",
+      "connected_cases": [
+       "WP(C)/501/2024"
+      ],
+      "page_start": 1,
+      "page_end": 1,
+      "raw_text": "2. | WP(C)/502/2024 | SHRI SYNTHETIC TWO | MR R THREE | GOVT ADV TL\nVERSUS\nSTATE OF TESTLAND",
+      "extraction_method": "TEXT",
+      "extraction_confidence": 1.0,
+      "validation_status": "VALIDATED",
+      "validation_flags": [],
+      "parties": [
+       {
+        "name_raw": "SHRI SYNTHETIC TWO",
+        "side": "PETITIONER",
+        "sequence": 0
+       },
+       {
+        "name_raw": "STATE OF TESTLAND",
+        "side": "RESPONDENT",
+        "sequence": 1
+       }
+      ],
+      "advocates": [
+       {
+        "name_raw": "MR R THREE",
+        "side": "PETITIONER",
+        "sequence": 0
+       },
+       {
+        "name_raw": "GOVT ADV TL",
+        "side": "RESPONDENT",
+        "sequence": 0
+       }
+      ]
+     }
+    ]
+   },
+   {
+    "phase": "complete",
+    "parser_version": "ghc-layout-1.0",
+    "extraction_status": "EXTRACTED",
+    "metadata": {
+     "parser_version": "ghc-layout-1.0",
+     "page_status_counts": {
+      "OK": 1
+     },
+     "ocr_pages": [],
+     "entries": 2,
+     "entries_needing_review": 0,
+     "ocr_available": true,
+     "benches": 1,
+     "column_sources": {
+      "clusters": 1
+     },
+     "pdf_date_text": "2026-11-02",
+     "serial_stats": {
+      "sections": 1,
+      "distinct_serials": 2,
+      "missing": 0,
+      "backwards": 0
+     }
+    }
+   }
+  ],
+  "expected_cases": [
+   "WP(C)/501/2024",
+   "WP(C)/502/2024"
+  ]
+ }
+}

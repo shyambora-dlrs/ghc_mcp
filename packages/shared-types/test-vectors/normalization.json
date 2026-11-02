@@ -1,0 +1,21 @@
+{
+  "case_numbers": [
+    { "input": "WP(C)/1589/2026", "normalized": "WP(C)/1589/2026", "key": "WPC15892026" },
+    { "input": "wp(c) 1589 / 2026", "normalized": "WP(C)/1589/2026", "key": "WPC15892026" },
+    { "input": "WP(C)/01589/2026", "normalized": "WP(C)/1589/2026", "key": "WPC15892026" },
+    { "input": "I.A.(Civil)/2645/2025", "normalized": "I.A.(CIVIL)/2645/2025", "key": "IACIVIL26452025" },
+    { "input": "Crl.A./91/2017", "normalized": "CRL.A./91/2017", "key": "CRLA912017" },
+    { "input": "WA/225/2024", "normalized": "WA/225/2024", "key": "WA2252024" },
+    { "input": "PIL/23/2024", "normalized": "PIL/23/2024", "key": "PIL232024" },
+    { "input": "Mc(Crl.Pet) 12/2025", "normalized": "MC(CRL.PET)/12/2025", "key": "MCCRLPET122025" },
+    { "input": "FIXED", "normalized": null, "key": null },
+    { "input": "WP(C)/1589", "normalized": null, "key": null },
+    { "input": "", "normalized": null, "key": null }
+  ],
+  "names": [
+    { "input": "MR. G PEGU(C.G.C.)", "normalized": "MR G PEGU C G C" },
+    { "input": "  Mr  D K  Das ", "normalized": "MR D K DAS" },
+    { "input": "THE STATE OF ASSAM AND 14 ORS.", "normalized": "THE STATE OF ASSAM AND 14 ORS" },
+    { "input": "...", "normalized": null }
+  ]
+}

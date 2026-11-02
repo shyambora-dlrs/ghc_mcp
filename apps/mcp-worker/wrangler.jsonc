@@ -1,0 +1,74 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "ghc-cause-list-mcp",
+  "main": "src/index.ts",
+  "compatibility_date": "2026-11-02",
+  "compatibility_flags": ["nodejs_compat"],
+  "vars": {
+    "APP_ENV": "production",
+    "APP_BASE_URL": "http://localhost:8787",
+    "LOG_LEVEL": "info",
+    "GROQ_BASE_URL": "https://api.groq.com/openai/v1",
+    // Set after checking GET https://api.groq.com/openai/v1/models for your key. Keep GROQ_ENABLED=false until verified.
+    "GROQ_MODEL": "",
+    "GROQ_ENABLED": "false",
+    "GROQ_TIMEOUT_MS": "30000",
+    "GROQ_MAX_COMPLETION_TOKENS": "1200",
+    "GROQ_TEMPERATURE": "0.2",
+    "GHC_SOURCE_URL": "https://ghconline.gov.in/index.php/consolidated-cause-list/",
+    "CRAWLER_USER_AGENT": "GHC-Cause-List-MCP/1.0 (contact: SET-A-REAL-CONTACT-BEFORE-PRODUCTION)",
+    "CRAWL_LOOKBACK_DAYS": "14",
+    "RECHECK_DAYS": "3",
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "ghc-cause-list-db",
+      // Replace with the id printed by `wrangler d1 create ghc-cause-list-db`. Never deploy the placeholder.
+      "database_id": "17c25503-c30c-404c-a91b-f81a64ce530c",
+      "migrations_dir": "../../database/migrations",
+    },
+    {
+      "binding": "ghc_cause_list_db",
+      "database_name": "ghc-cause-list-db",
+      "database_id": "17c25503-c30c-404c-a91b-f81a64ce530c",
+      "remote": true,
+    },
+  ],
+  "r2_buckets": [
+    {
+      "binding": "DOCUMENTS_BUCKET",
+      "bucket_name": "ghc-cause-list-documents",
+    },
+  ],
+  "queues": {
+    "producers": [
+      {
+        "binding": "INGESTION_QUEUE",
+        "queue": "ghc-cause-list-ingestion",
+      },
+    ],
+    "consumers": [
+      {
+        "queue": "ghc-cause-list-ingestion",
+        // One message at a time keeps requests to the official host strictly sequential.
+        "max_batch_size": 1,
+        "max_concurrency": 1,
+        "max_retries": 5,
+        "dead_letter_queue": "ghc-cause-list-ingestion-dlq",
+      },
+    ],
+  },
+  // Conservative: discovery twice a day (UTC). The Court's publication times are unknown; adjust after observing them.
+  "triggers": {
+    "crons": ["30 2 * * *", "30 10 * * *"],
+  },
+  // Optional edge rate limiting (create the namespaces, then uncomment). An in-isolate fallback is used otherwise.
+  // "ratelimits": [
+  //   { "name": "MCP_RATE_LIMITER", "namespace_id": "1001", "simple": { "limit": 120, "period": 60 } },
+  //   { "name": "AI_RATE_LIMITER", "namespace_id": "1002", "simple": { "limit": 10, "period": 60 } }
+  // ],
+  "observability": {
+    "enabled": true,
+  },
+}

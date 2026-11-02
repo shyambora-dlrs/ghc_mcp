@@ -1,0 +1,16 @@
+node_modules/
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.wrangler/
+.dev.vars
+.env
+.env.*
+!.env.example
+dist/
+coverage/
+*.log
+# live-downloaded court PDFs are never committed
+tests/fixtures/live/
+.local/

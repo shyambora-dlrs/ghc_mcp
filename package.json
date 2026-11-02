@@ -1,0 +1,24 @@
+{
+  "name": "ghc-cause-list-mcp",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Gauhati High Court Consolidated Cause List MCP server (Cloudflare Workers + Python parser)",
+  "engines": { "node": ">=22" },
+  "workspaces": ["apps/*", "packages/*"],
+  "scripts": {
+    "dev:mcp": "npm run dev -w @ghc/mcp-worker",
+    "dev:parser": ".venv/bin/python -m uvicorn app.main:app --app-dir ingestion/parser-service --port 8000 --reload",
+    "test": "npm run test -w @ghc/mcp-worker && npm run test:parser",
+    "test:parser": ".venv/bin/python -m pytest ingestion/parser-service/tests -q",
+    "test:integration": "npm run test:integration -w @ghc/mcp-worker",
+    "typecheck": "npm run typecheck -w @ghc/shared-types && npm run typecheck -w @ghc/mcp-worker",
+    "lint": "npm run lint -w @ghc/mcp-worker",
+    "format": "prettier --write \"apps/**/*.{ts,json,jsonc}\" \"packages/**/*.ts\"",
+    "db:migrate:local": "npm run db:migrate:local -w @ghc/mcp-worker",
+    "db:migrate:remote": "npm run db:migrate:remote -w @ghc/mcp-worker",
+    "db:seed:test": "npm run db:seed:test -w @ghc/mcp-worker"
+  },
+  "devDependencies": {
+    "prettier": "3.9.10"
+  }
+}

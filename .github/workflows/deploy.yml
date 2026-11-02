@@ -1,0 +1,47 @@
+name: Deploy Worker
+# Deploys only from main, after CI, and only when the repository owner has configured the secrets below.
+# Required repository secrets:  CLOUDFLARE_API_TOKEN, CLOUDFLARE_ACCOUNT_ID
+# Prerequisites (one-off, see docs/deployment.md): D1/R2/Queue created, real database_id in wrangler.jsonc,
+# Worker secrets set with `wrangler secret put` (GROQ_API_KEY, ADMIN_API_TOKEN, ...).
+on:
+  workflow_run:
+    workflows: [CI]
+    types: [completed]
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: deploy-worker
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    if: ${{ github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success' }}
+    runs-on: ubuntu-latest
+    environment: production # configure required reviewers on this GitHub environment for a manual gate
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Refuse to deploy the placeholder database id
+        run: |
+          if grep -q '00000000-0000-0000-0000-000000000000' apps/mcp-worker/wrangler.jsonc; then
+            echo "wrangler.jsonc still contains the placeholder D1 database_id" >&2; exit 1; fi
+      - name: Apply D1 migrations (remote)
+        working-directory: apps/mcp-worker
+        run: npx wrangler d1 migrations apply ghc-cause-list-db --remote
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+      - name: Deploy
+        working-directory: apps/mcp-worker
+        run: npx wrangler deploy
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}

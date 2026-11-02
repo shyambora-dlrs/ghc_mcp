@@ -1,0 +1,32 @@
+name: Source runner (push mode)
+# Fallback ingestion path for when the Workers runtime cannot validate the Court site's incomplete TLS chain
+# (docs/source-discovery.md, "TLS"). Fetches the source page + PDFs here (with a verified CA bundle) and pushes
+# them to the Worker. Disabled until the owner sets the secrets below and enables the schedule.
+# Secrets: WORKER_URL (https://<worker-host>), PARSER_CALLBACK_TOKEN, CRAWLER_CONTACT (a real contact for the User-Agent)
+on:
+  workflow_dispatch:
+    inputs:
+      lookback_days:
+        description: Days back (by listing date) to ingest
+        default: "3"
+  # schedule:
+  #   - cron: "45 3,11 * * *"
+
+permissions:
+  contents: read
+
+jobs:
+  push:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - run: pip install -r ingestion/parser-service/requirements.txt
+      - run: ./scripts/build-ca-bundle.sh .local/ghconline-ca-bundle.pem
+      - name: Fetch and push
+        working-directory: ingestion/parser-service
+        env:
+          PARSER_CALLBACK_TOKEN: ${{ secrets.PARSER_CALLBACK_TOKEN }}
+          CRAWLER_USER_AGENT: GHC-Cause-List-MCP/1.0 (contact: ${{ secrets.CRAWLER_CONTACT }})
+        run: python -m app.cli crawl-push --worker "${{ secrets.WORKER_URL }}" --ca-bundle ../../.local/ghconline-ca-bundle.pem --lookback-days "${{ inputs.lookback_days || 3 }}"
